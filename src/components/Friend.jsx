@@ -1,9 +1,9 @@
 import React from 'react'
 import Button from './Button'
 
-function Friend({ friend }) {
+function Friend({ friend, handleSelect,selectedFriend }) {
     return (
-      <li>
+      <li className={friend.id === selectedFriend?.id ? "selected" : ""}>
         <img src={friend.image} alt={friend.name} />
         <h3>{friend.name}</h3>
   
@@ -22,9 +22,9 @@ function Friend({ friend }) {
         {friend.balance === 0 && <p> You and {friend.name} are even.</p>}
   
         {/* <Button buttonText='Select' /> */}
-        <Button>
+        <Button onClick={()=>handleSelect(friend)}>
           {/* children */}
-          Select
+          {friend.id === selectedFriend?.id ? "Remove" : "Select" }
         </Button>
       </li>
     );

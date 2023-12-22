@@ -1,10 +1,13 @@
 import React from 'react'
 import Button from './Button';
 
-function FormSplitBill() {
+function FormSplitBill({selectedFriend}) {
+
+    
+
     return (
       <form className="form-split-bill">
-        <h2>Split bill with X</h2>
+        <h2>Split bill with {selectedFriend.name}</h2>
   
         <label>💰 Bill value</label>
         <input type="text" />
@@ -12,13 +15,13 @@ function FormSplitBill() {
         <label>🙎 Your Expenses</label>
         <input type="text" />
   
-        <label>👬 X's Expenses</label>
+        <label>👬 {selectedFriend.name}'s Expenses</label>
         <input type="text" />
   
         <label>🤑 WHo will pay the bill?</label>
         <select>
           <option>You</option>
-          <option>X</option>
+          <option>{selectedFriend.name}</option>
         </select>
   
         <Button>Split Bill</Button>
