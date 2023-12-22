@@ -39,7 +39,9 @@ export default function App() {
     setSelectedFriend(prev=>{
       return prev?.id === friend.id ? null : friend;
     })
-    
+
+    setShowAddFriend(false);
+
   }
 
   function handleShowFunction() {
