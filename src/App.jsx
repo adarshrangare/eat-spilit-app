@@ -9,14 +9,14 @@ import {
 const initialFriends = [
   {
     id: 118836,
-    name: "Clark",
-    image: "https://i.pravatar.cc/48?u=118836",
+    name: "Sudhir",
+    image: "https://media.licdn.com/dms/image/C5603AQEDUK_45Tmt0A/profile-displayphoto-shrink_800_800/0/1622016255219?e=1708560000&v=beta&t=UWa8rswuY1rn0lkeVwol7wdr6WbqUyDKRvWd06Zo16g",
     balance: -7,
   },
   {
     id: 933372,
-    name: "Sarah",
-    image: "https://i.pravatar.cc/48?u=933372",
+    name: "Vikas",
+    image: "https://media.licdn.com/dms/image/C5603AQEaQwisDHv09Q/profile-displayphoto-shrink_400_400/0/1593661182272?e=1708560000&v=beta&t=iyNM-uJncRMbjameGdceu_XGm2LD8fKbpAYenDT7oS4",
     balance: 20,
   },
   {
